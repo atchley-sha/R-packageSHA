@@ -1,0 +1,17 @@
+Package: packageSHA
+Type: Package
+Title: Miscellaneous Stuff that I Use a Lot
+Version: 0.1.0
+Author: Hayden Atchley
+Maintainer: Hayden Atchley <atchley.sha@gmail.com>
+Description: Miscellaneous stuff that I use a lot.
+    There's not much else to it.
+License: Unlimited
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports:
+    dplyr,
+    magrittr,
+    flextable,
+    tibble
