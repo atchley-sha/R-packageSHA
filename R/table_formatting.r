@@ -14,9 +14,9 @@ my_kbl <- function(df,
                    digits = 2,
                    align = NULL,
                    bootstrap_options = c("striped", "hover", "responsive"),
-                   latex_options = c("striped", "repeat_header")
+                   latex_options = c("striped", "repeat_header", "HOLD_position")
 ) {
-  knitr::kable(df, digits = digits, align = align, caption = caption) %>%
+  knitr::kable(df, digits = digits, align = align, caption = caption, booktabs = T) %>%
     kableExtra::kable_styling(
       bootstrap_options = bootstrap_options,
       latex_options = latex_options,

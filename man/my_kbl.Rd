@@ -10,7 +10,7 @@ my_kbl(
   digits = 2,
   align = NULL,
   bootstrap_options = c("striped", "hover", "responsive"),
-  latex_options = c("striped", "repeat_header")
+  latex_options = c("striped", "repeat_header", "HOLD_position")
 )
 }
 \arguments{
