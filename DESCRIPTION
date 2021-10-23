@@ -14,4 +14,6 @@ Imports:
     dplyr,
     magrittr,
     flextable,
-    tibble
+    tibble,
+    knitr,
+    kableExtra

@@ -1,3 +1,31 @@
+#' Standard Kable Format
+#'
+#' Create and format a Kable with standard formatting
+#' @param df The dataframe to format as a flextable
+#' @param caption Caption to add to Kable
+#' @param digits The number of digits to round to
+#' @param align How to align the table; a vector or string for each column
+#' @param bootstrap_options Bootstrap options to be used
+#' @param latex_options LaTeX options to be used
+#' @return A formatted flextable object
+#' @export
+my_kbl <- function(df,
+                   caption = NULL,
+                   digits = 2,
+                   align = NULL,
+                   bootstrap_options = c("striped", "hover", "responsive"),
+                   latex_options = c("striped", "scale_down", "repeat_header")
+) {
+  knitr::kable(df, digits = digits, align = align, caption = caption) %>%
+    kableExtra::kable_styling(
+      bootstrap_options = bootstrap_options,
+      latex_options = latex_options,
+      full_width = F
+    )
+}
+
+
+
 #' Standard Flextable Format
 #'
 #' Create and format a flextable with standard formatting
