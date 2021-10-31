@@ -5,6 +5,7 @@
 #' @param caption Caption to add to Kable
 #' @param digits The number of digits to round to
 #' @param align How to align the table; a vector or string for each column
+#' @param linesep Line separation vector
 #' @param bootstrap_options Bootstrap options to be used
 #' @param latex_options LaTeX options to be used
 #' @return A formatted flextable object

@@ -9,6 +9,7 @@ my_kbl(
   caption = NULL,
   digits = 2,
   align = NULL,
+  linesep = "",
   bootstrap_options = c("striped", "hover", "responsive"),
   latex_options = c("striped", "repeat_header", "HOLD_position")
 )
@@ -21,6 +22,8 @@ my_kbl(
 \item{digits}{The number of digits to round to}
 
 \item{align}{How to align the table; a vector or string for each column}
+
+\item{linesep}{Line separation vector}
 
 \item{bootstrap_options}{Bootstrap options to be used}
 
