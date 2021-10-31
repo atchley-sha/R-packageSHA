@@ -6,6 +6,7 @@
 #' @param digits The number of digits to round to
 #' @param align How to align the table; a vector or string for each column
 #' @param linesep Line separation vector
+#' @param escape T/F to escape special characters
 #' @param bootstrap_options Bootstrap options to be used
 #' @param latex_options LaTeX options to be used
 #' @return A formatted flextable object
@@ -15,10 +16,17 @@ my_kbl <- function(df,
                    digits = 2,
                    align = NULL,
                    linesep = "",
+                   escape = F,
                    bootstrap_options = c("striped", "hover", "responsive"),
                    latex_options = c("striped", "repeat_header", "HOLD_position")
 ) {
-  knitr::kable(df, digits = digits, align = align, caption = caption, booktabs = T, linesep = linesep) %>%
+  knitr::kable(df,
+               digits = digits,
+               align = align,
+               caption = caption,
+               booktabs = T,
+               linesep = linesep,
+               escape = escape) %>%
     kableExtra::kable_styling(
       bootstrap_options = bootstrap_options,
       latex_options = latex_options,
