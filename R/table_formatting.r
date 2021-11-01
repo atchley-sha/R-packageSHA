@@ -74,18 +74,3 @@ my_flextable <- function(df,
       else .
     }
 }
-
-
-
-#' Enumerate Matrix Rows/Columns
-#'
-#' Converts a matrix to a tibble and adds row/column names that enumerate the rows/columns
-#' @param mat The matrix to enumerate
-#' @return A tibble with numbered rows and columns
-#' @export
-enumerate_matrix <- function(mat){
-  mat %>%
-    tibble::as_tibble() %>%
-    tibble::rowid_to_column() %>%
-    `colnames<-`(c(" ", 1:ncol(mat)))
-}
