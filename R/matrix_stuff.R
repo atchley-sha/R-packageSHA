@@ -20,7 +20,7 @@ enumerate_matrix <- function(mat){
 #'@param end What symbol to end the matrix with
 #'@return A printed LaTeX/HTML matrix
 #'@export
-write_mat <- function(mat, begin = "[", end = "]") {
+write_mat <- function(mat, begin = "\\left[", end = "\\right]") {
   mat_out <-
     apply(mat, 1, function(x) {
       paste(

@@ -4,7 +4,7 @@
 \alias{write_mat}
 \title{Write matrix}
 \usage{
-write_mat(mat, begin = "[", end = "]")
+write_mat(mat, begin = "\\\\left[", end = "\\\\right]")
 }
 \arguments{
 \item{mat}{The matrix to print}
