@@ -3,3 +3,4 @@
 export(enumerate_matrix)
 export(my_flextable)
 export(my_kbl)
+export(write_mat)

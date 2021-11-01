@@ -19,7 +19,7 @@ enumerate_matrix <- function(mat){
 #'@param begin What symbol to begin the matrix with
 #'@param end What symbol to end the matrix with
 #'@return A printed LaTeX/HTML matrix
-#'
+#'@export
 write_mat <- function(mat, begin, end) {
   mat_out <-
     apply(x, 1, function(mat) {
