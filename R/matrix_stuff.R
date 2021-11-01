@@ -22,9 +22,9 @@ enumerate_matrix <- function(mat){
 #'@export
 write_mat <- function(mat, begin, end) {
   mat_out <-
-    apply(x, 1, function(mat) {
+    apply(mat, 1, function(x) {
       paste(
-        paste(mat, collapse = "&"),
+        paste(x, collapse = "&"),
         "\\\\"
       )
     })
